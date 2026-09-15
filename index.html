@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Margot Fleury • Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-bg">
+        <div class="noise"></div>
+        <div class="gradient-blob b1"></div>
+        <div class="gradient-blob b2"></div>
+    </div>
+
+    <header class="site-header glass-nav">
+        <div class="logo">
+            <span class="logo-text">Margot<span class="dot">.</span>dev</span>
+        </div>
+
+        <nav class="nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About me</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+            🌙
+        </button>
+    </header>
+
+    <main>
+        <section id="home" class="section hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight-text">Margot Fleury</span>
+                </h1>
+                <p class="hero-subtitle typewriter">
+                    Computer Science Student · Full-Stack Developer
+                </p>
+                <p class="hero-desc">
+                    3rd year of a Bachelor of Technology in Computer Science (BUT Informatique), specializing in Application Development at IUT d’Annecy – Université Savoie Mont Blanc. Passionate about web and application development, I enjoy designing efficient, user-friendly digital experiences while combining technical skills with creativity.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">
+                        About me <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a class="btn btn-secondary" href="cv/CV_Margot_Fleury.pdf" target="_blank">
+                        Open my CV <i class="fa-solid fa-file-pdf"></i>
+                    </a>                    
+                </div>
+                
+                <div class="hero-tags">
+                    <span>Web development</span>
+                    <span>App development</span>
+                    <span>UI & UX</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="photo-container">
+                    <img src="img/pdp.jpg" alt="Margot Fleury" class="photo" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <h3>Who am I?</h3>
+                    <p>
+                        I’m Margot, a Computer Science student at <strong>IUT of Annecy – Université Savoie Mont Blanc</strong>, currently in my third year of a Bachelor of Technology in Computer Science (BUT Informatique), specializing in Application Development.
+                    </p>
+                    <p>
+                        I’m passionate about web and application development and enjoy designing and building efficient, user-friendly solutions. Through academic projects and professional experience, I have developed strong skills in problem-solving, teamwork, communication and adaptability.
+                    </p>
+                    <p>
+                        I particularly enjoy combining technology with creativity, whether through interface design, interactive experiences or creative coding. I like understanding how things work, experimenting with new technologies and turning ideas into functional digital projects.
+                    </p>
+                    <p>
+                        I’m looking forward to continuing to develop my technical skills through challenging projects and professional experiences.
+                    </p>
+
+                    <div class="info-badges">
+                        <span class="badge"><i class="fa-solid fa-location-dot"></i> Annecy / Haute-Savoie, France</span>
+                        <span class="badge"><i class="fa-solid fa-briefcase"></i> Looking for Internship</span>
+                        <span class="badge"><i class="fa-solid fa-car"></i> Driving licence — B</span>
+                    </div>
+                </div>
+
+                <div class="about-skills">
+                    <div class="skills-header">
+                        <h3>Technical Skills</h3>
+                        <p>A balanced mix of development, design logic, data and collaboration.</p>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-card glass-card">
+                            <i class="fa-solid fa-code"></i>
+                            <h4>Programming</h4>
+                            <div class="tags">
+                                <span>Java</span><span>C</span><span>VB.NET</span><span>PHP</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <i class="fa-solid fa-window-maximize"></i>
+                            <h4>Web Development</h4>
+                            <div class="tags">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span><span>Tailwind</span><span>Laravel 10</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <i class="fa-solid fa-database"></i>
+                            <h4>Databases</h4>
+                            <div class="tags">
+                                <span>Oracle</span><span>PostgreSQL</span><span>MySQL</span><span>MariaDB</span><span>SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <h4>Engineering</h4>
+                            <div class="tags">
+                                <span>OOP</span><span>UML</span><span>MERISE</span><span>Agile / Scrum</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <h4>Systems</h4>
+                            <div class="tags">
+                                <span>Windows</span><span>Linux</span><span>macOS</span><span>TCP/IP</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h4>Tools</h4>
+                            <div class="tags">
+                                <span>Git</span><span>GitLab</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-skills-grid">
+                        <div class="profile-skill-panel glass-card">
+                            <h4>Soft Skills</h4>
+                            <div class="tags">
+                                <span>Teamwork</span><span>Creativity</span><span>Adaptability</span><span>Problem-solving</span><span>Critical Thinking</span>
+                            </div>
+                        </div>
+                        <div class="profile-skill-panel glass-card">
+                            <h4>Languages</h4>
+                            <div class="tags">
+                                <span>French - Native</span><span>English - C1</span><span>Spanish - A2</span><span>Danish - A0</span><span>Italian - A0</span><span>Russian - A0</span><span>Japanese - A0</span>
+                            </div>
+                        </div>
+                        <div class="profile-skill-panel glass-card">
+                            <h4>Activities</h4>
+                            <p>Dance instructor, climbing, weight training, badminton and swimming.</p>
+                        </div>
+                        <div class="profile-skill-panel glass-card">
+                            <h4>Creative Interests</h4>
+                            <p>Creative coding, video editing, music and outdoor projects inspired by the mountains.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-grid mt-5">
+                <div class="column">
+                    <h3 class="subsection-title">Experiences</h3>
+                    <div class="timeline">
+                        <div class="timeline-item glass-card">
+                            <span class="date">April 2026 – June 2026</span>
+                            <h4>Full-Stack Developer Intern — Hunimalis</h4>
+                            <p>Contributed to the development and maintenance of web and application solutions dedicated to the pet service industry.</p>
+                            <p>Worked on both frontend and backend development using PHP, JavaScript, Bootstrap and MariaDB/SQL.</p>
+                            <p>Implemented new features, improved existing interfaces, fixed bugs and adapted functionalities according to project requirements.</p>
+                            <p>Worked in a professional development environment using GitLab, branches, merge requests and ticket-based project management.</p>
+                            <p>PHP · JavaScript · Bootstrap · MariaDB · SQL · GitLab</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <span class="date">Since Jan 2026</span>
+                            <h4>Cashier – Carrefour Market, Cruseilles</h4>
+                            <p>Managing checkout operations, ensuring customer satisfaction, handling payments, and maintaining efficiency in a fast-paced retail environment.</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <span class="date">Oct 2025</span>
+                            <h4>Shelf Stocker (Temp) – Auchan, Seynod</h4>
+                            <p>Restocked shelves, ensured product availability, maintained aisle organization.</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <span class="date">2024–2025</span>
+                            <h4>Crew Member – McDonald’s, Epagny</h4>
+                            <p>Customer service, cash register operations, teamwork and fast-paced environment.</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <span class="date">2023 – 2024</span>
+                            <h4>Volunteer — Event Organization & Administrative Tasks</h4>
+                            <p><strong>Fédération des Familles Rurales</strong></p>
+                            <p>Assisted in organizing community events and carrying out administrative tasks. Developed organizational skills, teamwork and communication through involvement in community activities.</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <span class="date">Since 2021</span>
+                            <h4>Dance Instructor – Dancesfit Studio</h4>
+                            <p>Teaching group classes, creating choreographies, developing pedagogy and leadership.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3 class="subsection-title">Education & Achievements</h3>
+                    <div class="timeline">
+                        <div class="timeline-item glass-card">
+                            <span class="date">2023 – Present</span>
+                            <h4>Bachelor of Technology (BUT) in Computer Science</h4>
+                            <p>IUT d’Annecy — Université Savoie Mont Blanc</p>
+                            <p>Application Development Track — Design, Development & Testing</p>
+                            <p>Key areas: Web Development · Software Engineering · Databases · Systems & Networking · Agile Methods</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <span class="date">2024</span>
+                            <h4>French Baccalauréat STI2D</h4>
+                            <p>SIN specialization – Honours (Mention Bien).</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <span class="date">2024</span>
+                            <h4>1st Prize – Engineering Olympiad</h4>
+                            <p>Awarded 1st Prize at the regional competition in Grenoble for our connected biathlon target project, combining programming, electronics, embedded systems and 3D printing.</p>
+                            <p>This victory qualified our team for the national finals in Paris, where we presented our prototype to a jury.</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <span class="date">2023</span>
+                            <h4>Service National Universel (SNU)</h4>
+                            <p>Montmorot, France. Civic engagement and team cohesion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="projects-grid">
+                
+                <article class="project-card glass-card" data-details="<p>This project involves the creation of my personal portfolio website, designed to showcase my background, skills, and achievements in the field of web and application development. I have envisioned a modern, elegant, and immersive interface, featuring a pastel visual identity and smooth animations to create a pleasant and engaging user experience.</p><p>The site includes several features: a dynamic light/dark mode, built entirely with CSS and JavaScript; fluid animations such as smooth scroll, fade-in effects, and animated modals; a project card system with details opening in a lightbox; a comprehensive About me section, detailing technical skills, soft skills, and professional experiences; and advanced responsive design, optimized for all screen sizes.</p><p>A variety of aesthetic effects are also incorporated, including pastel glow, gradients, blurred borders, and soft typographies. Finally, the codebase is characterized by clean and modular organization, featuring structured HTML, organized CSS, and clear JavaScript. This portfolio highlights my attention to detail, my creativity, and my desire to design interfaces that are welcoming, functional, and aesthetically pleasing.</p>">   
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-code card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <span class="status finished">Finished</span>
+                        <h3>Portfolio Website</h3>
+                        <p>My personal portfolio with smooth animations and custom design.</p>
+                        <div class="card-tags">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card" 
+                    data-details="
+                    <div class='article-container'>
+
+                        <p class='article-intro'>
+                            <strong>April 2026 – June 2026 · Full-Stack Developer Intern</strong><br>
+                            During my twelve-week internship at <strong>Hunimalis</strong> in Annecy, I joined the development team and contributed to the maintenance and evolution of two platforms: the professional application (APP) and the public website (WWW).
+                        </p>
+
+                        <div class='article-block'>
+                            <div class='article-text'>
+                                <h4>1. Working in a Professional Development Environment</h4>
+                                <p>
+                                    I worked within a development team using <strong>GitLab</strong> and a ticket-based workflow.
+                                    Each task was developed on a dedicated Git branch, tested and reviewed before being submitted for validation.
+                                </p>
+                                <p>
+                                    Over the twelve weeks of my internship, I worked on around <strong>thirty tickets</strong> involving bug fixes, functional improvements and new features.
+                                </p>
+                            </div>
+
+                            <div class='article-media'>
+                                <img src='img/hunimalis/gitlab.png' alt='Hunimalis GitLab project management'>
+                            </div>
+                        </div>
+
+
+                        <div class='article-block reverse'>
+                            <div class='article-text'>
+                                <h4>2. Intervention Zone Management</h4>
+                                <p>
+                                    One of my main missions was the development of a new <strong>intervention zone management system</strong>.
+                                    Professionals can define geographical areas in which they provide home services.
+                                </p>
+                                <p>
+                                    I developed the management interface on the professional application, including the creation, modification, archiving and deletion of zones.
+                                    The feature also uses <strong>Mapbox</strong> to autocomplete addresses and retrieve geographical coordinates.
+                                </p>
+                                <p>
+                                    On the public website, these zones are used during the booking process to verify whether a customer's address is covered by the professional.
+                                </p>
+                            </div>
+
+                            <div class='article-media'>
+                                <img src='img/hunimalis/zones-intervention.png' alt='Hunimalis intervention zone management interface'>
+                            </div>
+                        </div>
+
+
+                        <div class='article-block'>
+                            <div class='article-text'>
+                                <h4>3. Service Catalogue & Drag-and-Drop</h4>
+                                <p>
+                                    I also worked on improving the way professionals manage their services.
+                                    A new <strong>visual representation of the service catalogue</strong> was introduced to make the interface clearer and easier to use.
+                                </p>
+                                <p>
+                                    I also implemented a <strong>drag-and-drop system</strong> allowing professionals to quickly reorder their services directly from the table.
+                                    The development included adjustments to the interface and the handling of service positions in the backend.
+                                </p>
+                            </div>
+
+                            <div class='article-media'>
+                                <img src='img/hunimalis/services.png' alt='Hunimalis service catalogue interface'>
+                            </div>
+                        </div>
+                        <div class='article-block vertical'>
+                            <div class='article-text'>
+                                <h4>Technologies & Development Workflow</h4>
+
+                                <p>
+                                    <strong>APP:</strong> PHP, JavaScript, HTML, Bootstrap, jQuery, MySQL, DBeaver, WAMP
+                                </p>
+
+                                <p>
+                                    <strong>WWW:</strong> Symfony 7.2, Twig, JavaScript, Node.js, Webpack Encore, MySQL
+                                </p>
+
+                                <p>
+                                    <strong>Other tools:</strong> Git, GitLab, Mapbox and ticket-based project management.
+                                </p>
+
+                                <p>
+                                    The development process included dedicated Git branches, testing, Pull Requests, code reviews and validation by the development manager before merging.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>">
+
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-paw card-icon"></i>
+                    </div>
+
+                    <div class="card-content">
+                        <span class="status finished">Internship · 2026</span>
+
+                        <h3>Hunimalis Internship</h3>
+
+                        <p>Full-Stack Developer internship focused on maintaining and evolving Hunimalis web platforms.</p>
+
+                        <div class="card-tags">
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>Symfony</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" 
+                data-details="
+                <div class='article-container'>
+                    <p class='article-intro'>
+                        In my final year of high school (STI2D - SIN), my team and I developed an innovative prototype to make biathlon training safer and more accessible. Here is the story of our journey from concept to gold medal.
+                    </p>
+                    <div class='article-block'>
+                        <div class='article-text'>
+                            <h4>The Concept & Prototype</h4>
+                            <p>We created a target system combining woodworking and 3D printing. The core innovation was an internal sensor capable of detecting laser rifle impacts with high precision.</p>
+                        </div>
+                        <div class='article-media'>
+                            <img src='img/concours/maquette.webp' alt='3D Maquette prototype' loading='lazy'>
+                            <span class='media-caption'>The 3D printed prototype</span>
+                        </div>
+                    </div>
+                    <div class='article-block reverse'>
+                        <div class='article-text'>
+                            <h4>Teamwork & Engineering</h4>
+                            <p>This project wasn't just about code. We handled mechanical design, embedded electronics, and wireless communication protocols.</p>
+                        </div>
+                        <div class='article-media'>
+                            <img src='img/concours/photo_grp.webp' alt='Engineering team' loading='lazy'>
+                            <span class='media-caption'>The engineering team</span>
+                        </div>
+                    </div>
+                    <div class='article-block'>
+                        <div class='article-text'>
+                            <h4>1st Prize in Grenoble</h4>
+                            <p>We presented our prototype at the regional edition of the 'Olympiades des Sciences de l’Ingénieur'. After demonstrating the system to the jury, the results were announced. We ranked 1st out of all teams!</p>
+                        </div>
+                        <div class='article-media'>
+                            <img src='img/concours/resultat.jpg' alt='Scoreboard results' loading='lazy'>
+                            <span class='media-caption'>Official results: 1st place!</span>
+                        </div>
+                    </div>
+                    <div class='article-block vertical'>
+                        <div class='article-text'>
+                            <h4>National Finals & Conclusion</h4>
+                            <p>This victory qualified us for the national finals in Paris. It was an incredible experience that strengthened both my engineering skills and my confidence in public speaking.</p>
+                        </div>
+                        <div class='article-media full-width'>
+                            <img src='img/concours/premier_prix.webp' alt='Receiving the prize' loading='lazy'>
+                            <div style='margin-top: 20px; text-align: center;'>
+                                <a href='img/concours/journal.jpg' target='_blank' class='btn btn-primary' style='display: inline-flex; align-items: center; gap: 8px;'>
+                                    📰 Read the Newspaper Article
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>">
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-bullseye card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <span class="status gold">1st Prize</span>
+                        <h3>Connected Biathlon</h3>
+                        <p>Engineering project: C++, Electronics & 3D Printing.</p>
+                        <div class="card-tags">
+                            <span>C++</span><span>Arduino</span><span>Electronics</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="contact-box glass-card">
+                <h2>Let's work together 💌</h2>
+                <p>I am looking for an internship or freelance opportunities.</p>
+                <a href="mailto:margot.fleury2006@gmail.com" class="btn btn-primary big-btn">
+                    margot.fleury2006@gmail.com
+                </a>
+                <div class="contact-socials">
+                    <a href="https://www.linkedin.com/in/margot-fleury-02088833b/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/FLEURY-Margot" class="social-link">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Made with 💖 by Optq.</p>
+    </footer>
+
+    <div id="project-bg">
+        <div id="project-modal">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Project Title</h2>
+                <div class="modal-line"></div>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</body>
+</html>
