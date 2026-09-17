@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
     <meta charset="UTF-8" />
     <title>Margot Fleury • Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="translation.js"></script>
     <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,15 +20,20 @@
 
     <header class="site-header glass-nav">
         <div class="logo">
-            <span class="logo-text">Margot<span class="dot">.</span>dev</span>
+            <span class="logo-text">optq<span class="dot">.</span>dev</span>
         </div>
 
         <nav class="nav">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About me</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
+            <a href="#about" class="nav-link" data-i18n="nav.about">About me</a>
+            <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+            <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
         </nav>
+        <button id="language-toggle" class="language-toggle" aria-label="Change language">
+            <span data-language="en">EN</span>
+            <span class="language-divider">|</span>
+            <span data-language="fr">FR</span>
+        </button>
         
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
             🌙

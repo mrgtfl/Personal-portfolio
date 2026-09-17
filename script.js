@@ -41,3 +41,38 @@ themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('theme-light');
     themeBtn.textContent = document.body.classList.contains('theme-light') ? '☀️' : '🌙';
 });
+
+/* --- LANGUAGE TOGGLE --- */
+const languageBtn = document.getElementById('language-toggle');
+
+let currentLanguage = 'en';
+
+function updateLanguage() {
+
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+
+        const key = element.dataset.i18n;
+
+        if (translations[currentLanguage][key]) {
+            element.textContent = translations[currentLanguage][key];
+        }
+
+    });
+
+    translateDocument(currentLanguage);
+    document.documentElement.lang = currentLanguage;
+
+    languageBtn.querySelectorAll('[data-language]').forEach(language => {
+        language.classList.toggle('active', language.dataset.language === currentLanguage);
+    });
+}
+
+languageBtn.addEventListener('click', () => {
+
+    currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
+
+    updateLanguage();
+
+});
+
+updateLanguage();

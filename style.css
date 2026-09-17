@@ -36,6 +36,8 @@ body.theme-light .logo-text { color: #333 !important; }
 body.theme-light .nav-link { color: #555 !important; }
 body.theme-light .nav-link:hover { color: #3d3544 !important; }
 body.theme-light .theme-toggle { color: #333 !important; }
+body.theme-light .language-toggle { color: #625767; }
+body.theme-light .language-toggle .active { color: #3d3544; }
 body.theme-light .main-bg::before {
     background:
         linear-gradient(115deg, rgba(255, 173, 200, 0.34), transparent 31%),
@@ -204,6 +206,43 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     color: var(--text-main);
+}
+
+.language-toggle {
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: color 0.25s, background 0.25s, border-color 0.25s, transform 0.25s;
+}
+
+.language-toggle:hover {
+    background: rgba(255, 173, 200, 0.14);
+    border-color: rgba(255, 173, 200, 0.42);
+    transform: translateY(-1px);
+}
+
+.language-toggle span {
+    transition: color 0.25s, opacity 0.25s;
+}
+
+.language-toggle .active {
+    color: var(--pink-soft);
+}
+
+.language-divider {
+    color: var(--text-muted);
+    opacity: 0.45;
 }
 
 .hero {
