@@ -83,7 +83,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-main);
-    overflow-x: hidden;
+    overflow-x: clip;
     line-height: 1.6;
     min-height: 100vh;
     letter-spacing: 0;
@@ -466,7 +466,11 @@ body {
 }
 
 .about-text {
+    position: sticky;
+    top: 110px;
+    align-self: start;
     transform: rotate(-0.4deg);
+    z-index: 2;
 }
 
 .info-badges {
@@ -923,6 +927,11 @@ body {
         top: 0;
         border-radius: 18px;
     }
+    
+    .about-text {
+        position: static;
+        transform: none;
+    }
 
     .logo { padding-right: 48px; }
 
@@ -1112,4 +1121,65 @@ body {
 
     .contact-socials { flex-direction: column; }
     .social-link { justify-content: center; }
+}
+
+/* CV Dropdown - Fix */
+.cv-dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+}
+
+.cv-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    min-width: 220px;
+    padding: 8px;
+    flex-direction: column;
+
+    background: rgba(35, 25, 38, 0.97);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    backdrop-filter: blur(18px);
+    box-shadow: var(--glass-shadow);
+}
+
+.cv-dropdown:hover .cv-dropdown-menu,
+.cv-dropdown:focus-within .cv-dropdown-menu {
+    display: flex;
+}
+
+.cv-dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 12px;
+    border-radius: 10px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+
+.cv-dropdown-menu a:hover {
+    background: rgba(255, 173, 200, 0.14);
+    color: var(--pink-soft);
+}
+
+.cv-dropdown-menu a i {
+    width: 18px;
+    text-align: center;
+    color: var(--accent);
+}
+
+.cv-chevron {
+    transition: transform 0.25s ease;
+}
+
+.cv-dropdown:hover .cv-chevron,
+.cv-dropdown:focus-within .cv-chevron {
+    transform: rotate(180deg);
 }
